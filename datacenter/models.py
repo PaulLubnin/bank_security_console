@@ -29,9 +29,7 @@ class Visit(models.Model):
         return localtime() - self.entered_at
 
     def is_long(self):
-        if self.get_duration() > timedelta(hours=1):
-            return True
-        return False
+        return self.get_duration() > timedelta(hours=1)
 
     def __str__(self):
         return '{user} entered at {entered} {leaved}'.format(
