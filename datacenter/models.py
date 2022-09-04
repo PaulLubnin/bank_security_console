@@ -29,10 +29,6 @@ class Visit(models.Model):
         return localtime() - self.entered_at
 
     def is_long(self):
-        if self.leaved_at:
-            duration = self.leaved_at - self.entered_at
-            if duration.seconds // 3600 >= 1:
-                return True
         if self.get_duration() > timedelta(hours=1):
             return True
         return False
