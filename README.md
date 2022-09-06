@@ -9,6 +9,16 @@ Python3 должен быть уже установлен.
 ```
 pip install -r requirements.txt
 ```
+Необходимо создать файл с секретными данными - `.env`
+```
+HOST=<host>
+PORT=<port>
+NAME=<name>
+USER=<user>
+PASSWORD=<password>
+SECRET_KEY=<secret key>
+DEBUG=True or DEBUG=False
+```
 После установки зависимостей запустите сервер командой:
 ```
 python manage.py runserver
