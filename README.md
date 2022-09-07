@@ -19,6 +19,7 @@ DB_PASSWORD=<password>
 DATABASE_URL=postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
 SECRET_KEY=<secret key>
 DEBUG=True or DEBUG=False
+ALLOWED_HOSTS=<allowed_host>,<allowed_host>,<allowed_host>
 ```
 После установки зависимостей запустите сервер командой:
 ```
