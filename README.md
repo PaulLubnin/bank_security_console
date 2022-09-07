@@ -11,11 +11,12 @@ pip install -r requirements.txt
 ```
 Необходимо создать файл с секретными данными - `.env`
 ```
-HOST=<host>
-PORT=<port>
-NAME=<name>
-USER=<user>
-PASSWORD=<password>
+DB_HOST=<host>
+DB_PORT=<port>
+DB_NAME=<name>
+DB_USER=<user>
+DB_PASSWORD=<password>
+DATABASE_URL=postgres://${DB_USER}:${DB_PASSWORD}@${DB_HOST}:${DB_PORT}/${DB_NAME}
 SECRET_KEY=<secret key>
 DEBUG=True or DEBUG=False
 ```
